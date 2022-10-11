@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AddcourseComponent } from './addcourse/addcourse.component';
 import { RouterModule, Routes } from '@angular/router';
 import { GetcourseComponent } from './getcourse/getcourse.component';
+import{HttpClientModule}from '@angular/common/http'
 
 const link:Routes=[
   {path:"",component:AddcourseComponent},
@@ -23,6 +24,7 @@ const link:Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     RouterModule.forRoot(link)
   ],
   providers: [],
